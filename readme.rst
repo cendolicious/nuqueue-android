@@ -8,20 +8,20 @@ NuQueue Android adalah aplikasi mobile (android) pada sistem informasi antrian N
 
     .. image:: https://image.ibb.co/ceiq19/Register.png
         :alt: Register NuQueue Android
-        :width: 100%
+        :width: 50%
         :align: center
 
     .. image:: https://image.ibb.co/hC7Top/Antrian_Ada.png
         :alt: List Antrian NuQueue Android
-        :width: 100%
+        :width: 50%
         :align: center
         
     .. image:: https://image.ibb.co/mbzPTp/Detail_Rumah_Sakit.png
         :alt: Detail Rumah Sakit
-        :width: 100%
+        :width: 50%
         :align: center
         
 .. image:: https://image.ibb.co/kWRFZU/Maps.png
         :alt: Maps Rumah Sakit
-        :width: 100%
+        :width: 50%
         :align: center

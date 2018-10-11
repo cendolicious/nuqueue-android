@@ -6,12 +6,12 @@ NuQueue Android
 
 NuQueue Android adalah aplikasi mobile (android) pada sistem informasi antrian NuQueue yang dapat membantu pasien dalam memesan antrian pada suatu Rumah Sakit. NuQueue Android terintegrasi dengan `NuQueue Vendor, NuQueue Backend serta NuQueue CS <https://github.com/cendolicious/nuqueue>`_. Dibuat menggunakan Java.
 
-.. image:: https://image.ibb.co/ceiq19/Register.png
-   :height: 100px
-   :width: 200 px
-   :scale: 50 %
-   :alt: alternate text
-   :align: right
+   .. image:: https://image.ibb.co/ceiq19/Register.png
+      :height: 100px
+      :width: 200px
+      :scale: 50%
+      :alt: alternate text
+      :align: right
 
     .. image:: https://image.ibb.co/hC7Top/Antrian_Ada.png
         :alt: List Antrian NuQueue Android

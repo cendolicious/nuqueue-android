@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/palewhite"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/custtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:minHeight="?attr/actionBarSize" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                fontPath="font/OpenSans-Semibold.ttf"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="17dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Daftar Menggunakan :"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/radioPilihanLama"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radioRM"
+                        android:text="No. NIK  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <!--<RadioButton
+                        android:id="@+id/radioNama"
+                        android:text="Nama &amp; Tanggal Lahir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />-->
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp">
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layNoRM"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Riwayat No. NIK"/>
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/norm_spinner"
+                    android:spinnerMode="dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+
+            <TextView
+            android:textStyle="bold"
+            android:text="Nomor NIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:id="@+id/norm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:focusable="true"
+                android:hint="Masukkan Nomor NIK.."
+                android:inputType="text" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/layoutNamaTTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama Lengkap"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="text"
+                        android:id="@+id/namapasien" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ttlpasien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:hint="Tanggal Lahir"
+                        android:inputType="date" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:elevation="4dp"
+                android:text="Booking"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

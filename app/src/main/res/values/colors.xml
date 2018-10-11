@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5267A1</color>
+    <color name="colorPrimaryDark">#273c75</color>
+    <color name="colorAccent">#646D8A</color>
+    <color name="colorTextBig">#d59a63</color>
+    <color name="colorTextMedium">#f7b06e</color>
+    <color name="colorTextForm">#273c75</color>
+    <color name="white">#FFFFFF</color>
+    <color name="palewhite">#EEEEEE</color>
+    <color name="red">#EF5350</color>
+    <color name="black">#000000</color>
+    <color name="grey">#bfbfbf</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+
+    <color name="venue_title">#4c4c4c</color>
+
+    <color name="colorCheck">#ffffff</color>
+    <color name="colorUncheck">#ffffff</color>
+</resources>
